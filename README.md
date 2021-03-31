@@ -1,6 +1,6 @@
 # netgear_switch_auto
 
-Netgear script automation with selenium
+Netgear switch automation script with selenium
 
 Works for GS105Ev2 and GS308E.
 
@@ -12,3 +12,8 @@ optional arguments:
   --host HOST      switch IP
   --port PORT      port number
   --action ACTION  action on port, default on
+  
+Can be used in crontab like:
+
+30 22 * * * export DISPLAY=:0; /home/pi/netgear.py --action off
+17 06 * * * export DISPLAY=:0; /home/pi/netgear.py
